@@ -2,8 +2,6 @@
 
 A react hooks approach to window resize events.
 
-> Disclaimer: To use hooks a pre-release version of react 16.7 is required. Since the hooks API is subject to change, this library may or may not work with future versions of react.
-
 ## Install
 
 ```
@@ -23,7 +21,7 @@ import React from 'react'
 import { useWindowSize } from 'react-hooks-window-size'
 
 const App: React.StatelessComponent = () => {
-  const size = useWindowSize()
+  const size = useWindowSize(/* 1280, 1024 */) // optionally pass in size values for server side rendering
 
   return (
     <p>
