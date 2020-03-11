@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-window-size",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A react hooks approach to window resize events",
   "repository": "https://github.com/garth/react-hooks-window-size.git",
   "author": "Garth Williams",
