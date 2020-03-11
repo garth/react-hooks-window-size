@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 export const useWindowSize = (ssrWidth = 1280, ssrHeight = 1024): { width: number; height: number } => {
   const [windowSize, setWindowSize] = useState(() =>
-    window
+    typeof window !== 'undefined'
       ? {
           width: window.innerWidth,
           height: window.innerHeight
@@ -14,7 +14,7 @@ export const useWindowSize = (ssrWidth = 1280, ssrHeight = 1024): { width: numbe
   )
 
   useEffect(() => {
-    if (window) {
+    if (typeof window !== 'undefined') {
       const onResize = () => setWindowSize({ width: window.innerWidth, height: window.innerHeight })
       window.addEventListener('resize', onResize)
       return () => window.removeEventListener('resize', onResize)
