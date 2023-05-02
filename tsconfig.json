@@ -1,19 +1,20 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "target": "es6",
-    "module": "commonjs",
-    "jsx": "react",
-    "rootDir": "src",
-    "outDir": ".code",
-    "newLine": "LF",
-    "lib": ["dom", "es2017"],
-    "moduleResolution": "node",
-    "importHelpers": true,
     "declaration": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "lib": ["dom", "es2017"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "outDir": ".code",
     "pretty": true,
+    "rootDir": "src",
     "sourceMap": true,
-    "inlineSources": true
+    "strictNullChecks": true,
+    "target": "es6"
   },
   "exclude": ["node_modules", "es", "lib"]
 }
